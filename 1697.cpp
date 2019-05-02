@@ -12,7 +12,7 @@ void bfs(int S, int D){
 	queue<int> que;
 	que.push(S);
 
-
+  int i;
 	while(!que.empty())
 	{
     printf("%d\n", que.front());
@@ -26,6 +26,7 @@ void bfs(int S, int D){
 				  que.push(here-1);
           que.push(here+1);
           que.push(here*2);
+
 				}
 
 
